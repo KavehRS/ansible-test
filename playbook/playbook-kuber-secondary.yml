@@ -1,0 +1,6 @@
+- hosts: nodes_kuber
+  remote_user: ansible
+  become: false
+  become_method: sudo
+  roles:
+  - kuber_kubeadm_let_ctl_secondary
